@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh root@$ZED_IP

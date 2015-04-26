@@ -1,0 +1,4 @@
+#!/bin/bash
+exec_path=~/linux-digilent
+
+$exec_path/scripts/dtc/dtc -I dts -O dtb -o $exec_path/devicetree.dtb $exec_path/ece453.dts

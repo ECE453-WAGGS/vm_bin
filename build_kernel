@@ -1,0 +1,6 @@
+#!/bin/bash
+cd ~/linux-digilent
+make distclean
+cp ~/vmware-shared/Gun_SW/ece453_defconfig arch/arm/configs/ece453_defconfig
+make ece453_defconfig
+make -j4

@@ -1,0 +1,2 @@
+#!/bin/bash
+scp_zed ~/linux-digilent/devicetree.dtb /mnt

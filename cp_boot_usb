@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo mount /dev/sdb1 /mnt/BOOT
+sudo cp ~/vmware-shared/Gun_SW/images/BOOT.BIN /mnt/BOOT/
+sudo cp ~/linux-digilent/devicetree.dtb /mnt/BOOT/
+sudo cp ~/linux-digilent/arch/arm/boot/zImage /mnt/BOOT/
+sudo umount /mnt/BOOT
