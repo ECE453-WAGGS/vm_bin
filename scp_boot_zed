@@ -1,9 +1,12 @@
 #!/bin/bash
-echo "Run cp_boot on ZedBoard first, then type any character and press enter to continue"
+echo -n "Run cp_boot on ZedBoard first, then type any character and press enter to continue"
 read foo
 
 echo "Press Ctrl-C to skip copying BOOT.BIN"
-scp_zed ~/vmware-shared/Gun_SW/images/BOOT.BIN /mnt/
+scp_zed ~/vmware-shared/zedboard/images/BOOT.BIN /mnt/
+
+echo "Press Ctrl-C to skip copying ramdisk8M.image.gz"
+scp_zed ~/vmware-shared/zedboard/images/ramdisk8M.image.gz /mnt/
 
 echo "Press Ctrl-C to skip copying devicetree.dtb"
 scp_zed ~/linux-digilent/devicetree.dtb /mnt/
